@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="logare" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <Label layoutX="320.0" layoutY="64.0" prefHeight="45.0" prefWidth="228.0" text="Logare Sala Fitness">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   <TextField fx:id="textFieldNume" layoutX="359.0" layoutY="138.0" promptText="Nume" />
+   <PasswordField fx:id="passwordField" layoutX="359.0" layoutY="178.0" promptText="Parola " />
+   <Label layoutX="296.0" layoutY="141.0" prefHeight="20.0" prefWidth="48.0" text="Nume:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="181.0" text="Parola:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   <Button fx:id="client_btn" layoutX="218.0" layoutY="260.0" prefHeight="26.0" prefWidth="81.0" text="Client">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   <Button fx:id="antrenor_btn" layoutX="349.0" layoutY="260.0" prefHeight="26.0" prefWidth="82.0" text="Antrenor">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   <Button fx:id="admin_btn" layoutX="478.0" layoutY="260.0" prefHeight="26.0" prefWidth="82.0" text="Admin">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   <Button fx:id="out" alignment="TOP_CENTER" layoutX="510.0" layoutY="343.0" prefHeight="26.0" prefWidth="58.0" text="Iesire" textAlignment="CENTER">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TitledPane animated="false" layoutX="14.0" layoutY="-89.0" text="untitled" />
+   <Label layoutX="349.0" layoutY="27.0" prefHeight="43.0" prefWidth="170.0" text="BUN VENIT!" textFill="#6a7a84">
+      <font>
+         <Font name="System Bold" size="29.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="421.0" fitWidth="228.0" layoutX="-37.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/fitness.jpg" />
+      </image>
+   </ImageView>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
